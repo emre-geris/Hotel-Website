@@ -1,0 +1,151 @@
+/*
+#007bff
+#6c757d
+#28a745
+#dc3545
+#ffc107
+#17a2b8
+#343a40
+#f8f9fa
+*/
+
+/* COLORS */
+:root {
+  --white: #fff;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --dark: #343a40;
+  --light: #f8f9fa;
+}
+/* TEXT COLORS */
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-success {
+  color: var(--success);
+}
+.text-danger {
+  color: var(--danger);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-info {
+  color: var(--info);
+}
+.text-dark {
+  color: var(--dark);
+}
+.text-light {
+  color: var(--light);
+}
+
+/* BACKGROUND COLORS */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-success {
+  background-color: var(--success);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-info {
+  background-color: var(--info);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.bg-light {
+  background-color: var(--light);
+}
+
+/* BUTTONS */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+.button-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.button-secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.button-success {
+  background-color: var(--success);
+  color: var(--white);
+}
+.button-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+.button-warning {
+  background-color: var(--warning);
+  color: var(--white);
+}
+.button-info {
+  background-color: var(--info);
+  color: var(--white);
+}
+.button-dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+.button-light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+.button-outline {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.button-outline-primary {
+  background-color: transparent;
+  color: var(--dark);
+  border: var(--primary) 1px solid;
+}
+.button-outline-primary:hover {
+  background-color: var(--primary);
+  border: var(--primary) 1px solid;
+  color: var(--white);
+}
+
+/* FLEX */
+.flex-row {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}

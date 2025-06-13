@@ -1,0 +1,67 @@
+/* COULD ADD MORE LATER */
+
+/* For max-width 768px devices */
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+  }
+  /* INFO ICONS */
+  .info-icons {
+    flex-direction: column;
+  }
+
+  .info-icons div {
+  }
+
+  .info-icons div p {
+    padding: 1rem 0;
+  }
+
+  /* CUSTOMER SERVICE */
+  .info-customer-service {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+  }
+  .cs-info button {
+    margin: auto;
+  }
+
+  /* GALLERY */
+  .gallery-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ROOM INFOS */
+  .room-infos-content {
+    flex-direction: column;
+  }
+
+  /* STAFF-INFO */
+  .staff-content .row {
+    flex-direction: column;
+  }
+  /* CUSTOMER SERVICE PRIMARY */
+  #info-customer-service-primary {
+    flex-direction: column;
+  }
+
+  /* CONTACT US */
+  #contact .row {
+    flex-direction: column;
+  }
+
+  #contact .row .column {
+    flex-basis: 100%;
+    max-width: 100%;
+    align-items: stretch;
+  }
+
+  /* FOOTER */
+}

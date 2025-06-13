@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 300;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  background-color: rgba(52, 58, 64, 0.8);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar h1 {
+  color: var(--white);
+  padding: 1rem;
+  margin: 0 0.5rem;
+  transition: transfom 0.3 ease;
+}
+
+.navbar h1:hover {
+  transform: translateY(-0.3rem);
+  border-bottom: solid 2px var(--warning);
+}
+
+.navbar h1 span {
+  color: var(--warning);
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar nav ul li {
+  padding: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: transfom 0.3 ease;
+}
+
+.navbar nav ul li:hover {
+  border-bottom: solid 2px var(--warning);
+  transform: translateY(-0.3rem);
+}
+/* SHOWCASE */
+
+.showcase::before {
+  position: absolute;
+  background-color: black;
+  opacity: 0.4;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase {
+  background-image: url(/img/bg-1.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  position: relative;
+}
+
+.showcase-content {
+  z-index: 1;
+}
+
+.showcase-content h1 {
+  font-size: 5.5rem;
+}
+
+.showcase-content p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  max-width: 80rem;
+}
+
+/* MAIN */
+/* Info-Icons */
+
+.info-icons {
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10rem;
+  background-color: var(--white);
+}
+
+.info-icons > div {
+  margin: 0 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-icons i {
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.info-icons p {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+/* CUSTOMER SERVICES */
+.info-customer-service {
+  width: 100%;
+}
+
+.cs-image {
+  flex: 1;
+  height: 100%;
+}
+
+.cs-image img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cs-info {
+  flex: 1;
+  justify-content: center;
+}
+
+.cs-info h1 {
+  color: var(--white);
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.cs-info p {
+  color: var(--white);
+  padding: 1rem;
+}
+
+.cs-info button {
+  align-self: flex-start;
+  margin: 1rem;
+}
+
+/* GALLERY */
+#gallery {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.gallery-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-header h1 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.gallery-body {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+.gallery-body > div {
+  flex: calc(25% - 1rem);
+}
+
+.img-card img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-card img:hover {
+  opacity: 0.8;
+}
+
+/* ROOM INFOS */
+#room-infos-header {
+  padding: 4rem 0;
+}
+.room-infos-content {
+  gap: 4rem;
+  padding: 4rem;
+}
+.room-infos-content .column:hover {
+  opacity: 0.8;
+}
+.room-infos-content .content-box {
+  background: var(--warning);
+  color: var(--white);
+}
+
+.content-box h2,
+.content-box p {
+  text-align: center;
+}
+
+.content-box h2 {
+  padding-top: 2rem;
+}
+
+.content-box p {
+  padding-bottom: 2rem;
+}
+
+/* STAFF */
+
+#staff-header {
+  margin-top: 4rem;
+  padding: 4rem;
+}
+
+.staff-content {
+  text-align: center;
+}
+
+.staff-content .row {
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.staff-content img {
+  object-position: center;
+  object-fit: cover;
+  clip-path: circle(50% at 50% 50%);
+  height: 36rem;
+  width: 36rem;
+}
+
+.staff-content h3 {
+  font-weight: 500;
+}
+
+/* CONTACT US */
+#contact {
+  width: 100%;
+  height: 100%;
+  padding-top: 6rem;
+}
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+#contact .row .column {
+  flex-basis: 50%; /* temel genişlik %50 */
+  flex-grow: 0; /* büyümesin */
+  flex-shrink: 0; /* küçülmesin */
+  max-width: 50%; /* maksimum genişlik de %50 olsun */
+  align-items: stretch;
+}
+
+.row .contact-content {
+  padding: 2rem;
+}
+
+#contact .row .column img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contact .row .column h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.row .column form label {
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.row .column form input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid var(--white);
+}
+.row .column form button {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/*FOOTER*/
+
+footer {
+  padding: 4rem 0;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer .socials i {
+  color: var(--primary);
+  padding: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  color: var(--white);
+  padding-top: 0.5rem;
+}
