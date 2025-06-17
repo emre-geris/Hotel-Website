@@ -22,7 +22,9 @@ The goal was to build a clean, elegant, and modern hotel website layout that loo
 - Google Fonts  
 
 > ⚠️ **Note:** This project was built without using CSS Grid.
-> This project was originally created as part of a Udemy course by **Sadık Turan**.  
+> This project was originally created as part of a Udemy course by **Sadık Turan**.
+> 📚 Inspired by a project in this Udemy course:  
+> [Komple Web Developer Eğitimi (in Turkish)](https://www.udemy.com/course/komple-web-developer-kursu/?couponCode=KEEPLEARNING)  
 > I personally wrote the code myself and made several modifications and improvements.  
 > This README file was generated with the assistance of AI to improve clarity and presentation.
 
